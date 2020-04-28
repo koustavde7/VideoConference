@@ -1,0 +1,1 @@
+python3 generateToken.py --key=5282f79e42994f39b98bf7f274ef1b9c --appID=98ff5e.vidyo.io --userName=Pooja --expiresInSecs=900 

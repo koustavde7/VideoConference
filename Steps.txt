@@ -1,0 +1,20 @@
+Steps to connect to video conference using Vidyo.io
+
+1. Include vidyo.io SDK
+
+<script src = "https://static.vidyo.io/latest/javascript/VidyoClient/VidyoClient.js?onload=onVidyoClientLoaded"></script>
+
+2. Initialize VidyoClient
+
+3. Create VidyoConnector object
+
+VC.CreateVidyoConnector({
+	viewID: "renderer", //Div ID where the composited video will be rendered, see VidyoConnector.html;
+	viewStyle: "VIDYO_CONNECTORVIEWSTYLE_Default", // Visual style of the composited renderer
+	remoteParticipants : 16,	//Maximum number of participants to render
+	logFileFilter: "warning info@VidyoClient info@VidyoConnector",
+	logFileName:"",
+	userData:""
+})
+
+4. Generate Token (Authentication of users)
